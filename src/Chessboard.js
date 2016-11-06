@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-class Checkerboard extends Component {
+class Chessboard extends Component {
     render() {
-      const checkerboard = [];
+      const chessboard = [];
       let currentRow = [];
 
       // generate checkerboard
@@ -14,18 +14,18 @@ class Checkerboard extends Component {
               className={row % 2 === column % 2 ? 'fill' : '' }></td>
           );
         }
-        checkerboard.push(<tr key={row}>{currentRow}</tr>);
+        chessboard.push(<tr key={row}>{currentRow}</tr>);
         currentRow = []; // reset the row
       }
 
       return (
-        <table className="checker">
+        <table className="chess">
           <tbody>
-            {checkerboard}
+            {chessboard}
           </tbody>
         </table>
       );
     }
 }
 
-export default Checkerboard;
+export default Chessboard;

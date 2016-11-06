@@ -1,6 +1,7 @@
 table {
   border-collapse: collapse;
   margin: auto;
+  margin-top: 20px;
 }
 
 td {
@@ -9,6 +10,10 @@ td {
   border: 1px solid black;
 }
 
-.fill {
+.checker .fill {
   background-color: black;
+}
+
+.chess .fill {
+  background-color: brown;
 }
